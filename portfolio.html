@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Port</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"/>
+    <link rel="stylesheet" href="port.css">
+    <style>
+        .renzy { color: white; }
+        .natty { color: rgb(239, 74, 102); }
+        
+        .navbar a {
+            margin: 0 15px;
+            position: relative;
+            text-decoration: none;
+            color: white; 
+            font-weight: bold;
+            padding-bottom: 5px; 
+        }
+
+       
+        .navbar a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background-color: rgb(241, 57, 88);
+            transform: scaleX(0);
+            transition: transform 0.15s ease-in-out;
+        }
+
+        .navbar a:hover::after {
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="animated"></div>
+        <header>
+            <h1><span class="renzy">.Renzy</span><span class="natty">Natty</span></h1>
+            <nav class="navbar">
+                <a href="#" class="active">Home</a>
+                <a href="port,home.html">About</a>
+                <a href="services.html">Service</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <section class="home animated">
+            <div class="home-detail">
+                <h1>Prince Renzy</h1>
+                <h2>Web Developer</h2>
+                <p>Let us make the world of programming better.</p>
+                <div class="download-social">
+                    <a href="Landing Page.png" class="btn">More Info</a>
+                    <div class="social-icon">
+                        <a href="https://github.com/RenzyNatty"><i class="ri-github-fill"></i></a>
+                        <a href="https://www.youtube.com/@Renzytechnology"><i class="ri-youtube-fill"></i></a>
+                        <a href=""><i class="ri-whatsapp-line"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-img">
+                <div class="img-box">
+                    <img src="prince.png" alt="Prince Renzy">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="footer">
+        <footer>
+            <p>@Keep coding, keep growing, and may your bugs be minimal! 🚀</p>
+        </footer>
+</div>
+    
+</body>
+</html>
