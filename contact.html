@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Prince Renzy</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background: url('contact(4).jpeg') no-repeat center center/cover; 
+            color: #ffffff; 
+            margin: 0; 
+            padding: 0; 
+        }
+        .navbar {
+            display: flex;
+            justify-content: flex-end; 
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .navbar a {
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 20px;
+            padding-bottom: 5px;
+            position: relative;
+            transition: color 0.3s;
+        }
+        .navbar a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: rgb(248, 98, 123);
+            transition: width 0.3s;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        
+        .navbar a:hover::after {
+            width: 100%;
+        }
+        header { 
+            text-align: center; 
+            padding: 50px 20px; 
+            background: rgba(0, 0, 0, 0.6); 
+        }
+        .contact, .contact-info { 
+            padding: 60px 20px; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: rgba(0, 0, 0, 0.7); 
+            border-radius: 10px; 
+        }
+        form { display: flex; flex-direction: column; gap: 10px; }
+        input, textarea, button { padding: 10px; border: none; border-radius: 5px; }
+        button { background: #ff7e5f; color: white; cursor: pointer; }
+        button:hover { background: #feb47b; }
+        .social-links { text-align: center; margin-top: 20px; }
+        .social-links a { color: white; font-size: 24px; margin: 0 10px; text-decoration: none; }
+        .social-links a:hover { color: #ff7e5f; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="portfolio.html">Home</a>
+        <a href="port,home.html">About</a>
+        <a href="services.html">Service</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <header>
+        <div class="container">
+            <h1>Contact Me</h1>
+            <p>Let's connect and discuss your next project</p>
+        </div>
+    </header>
+    <section class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <section class="contact-info">
+        <div class="container">
+            <h2>Contact Information</h2>
+            <p><strong>Email:</strong> princerenzy@gmail.com</p>
+            <p><strong>Phone:</strong> +255759177230</p>
+            <p><strong>Address:</strong> 123 Tech Street, Innovation City</p>
+            <div class="social-links">
+                <a href="https://github.com/princerenzy" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com/princerenzy" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
